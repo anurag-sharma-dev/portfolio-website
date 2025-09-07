@@ -11,7 +11,7 @@ export default function GlobeBackground({ children }) {
       THREE,
       mouseControls: false,
       touchControls: true,
-      gyroControls: false,
+      gyroControls: true,
       minHeight: 200.0,
       minWidth: 200.0,
       scale: 1.0,
@@ -26,8 +26,12 @@ export default function GlobeBackground({ children }) {
   }, []);
 
   return (
-    <div ref={vantaRef} className="min-h-screen w-full relative">
-      <div className="relative z-10">{children}</div>
-    </div>
+   <div 
+  ref={vantaRef} 
+  className="h-screen sm:h-screen md:h-[100vh] w-full relative"
+>
+  <div className="relative z-10">{children}</div>
+</div>
+
   );
 }
