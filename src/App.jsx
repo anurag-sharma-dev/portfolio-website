@@ -9,7 +9,7 @@ function App() {
           🌍 Welcome to My Portfolio
         </h1>
         <p className="text-lg md:text-2xl text-amber-500">
-          I am Anurag Sharma — Full Stack Developer
+          I am Anurag Sharma — Full Stack Develop
         </p>
       </div>
     </GlobeBackground>
